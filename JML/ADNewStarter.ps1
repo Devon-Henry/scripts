@@ -1,16 +1,16 @@
 Param (
   [Parameter(Mandatory=$true)]
-	    [string] $firstName,	
-	[Parameter(Mandatory=$true)]
-		[string] $lastName,
-	[Parameter(Mandatory=$true)]
-		[string] $office,
-	[Parameter(Mandatory=$true)]
-		[string] $title,
+  	[string] $firstName,	
   [Parameter(Mandatory=$true)]
-		[string] $department,
+	[string] $lastName,
   [Parameter(Mandatory=$true)]
-		[string] $license
+	[string] $office,
+  [Parameter(Mandatory=$true)]
+	[string] $title,
+  [Parameter(Mandatory=$true)]
+	[string] $department,
+  [Parameter(Mandatory=$true)]
+	[string] $license
 )
 
 $path = Get-AutomationVariable -Name "adpath"
